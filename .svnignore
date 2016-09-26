@@ -1,2 +1,4 @@
+.svnignore
 .git
 .gitkeep
+bin
