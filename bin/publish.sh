@@ -42,8 +42,14 @@ mv tmp/CHANGELOG.md trunk/
 rm -rf ./tmp
 
 # Push the changes
+
+# Dir is required.
+mkdir .svn/tmp
+
+# Set assets correct mime type.
 svn propset svn:mime-type image/png assets/*.png
 
 svn add trunk/*
 svn add assets/*
+
 svn commit -m ${latestTag} --username algolia
