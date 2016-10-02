@@ -46,10 +46,11 @@ rm -rf ./tmp
 # Dir is required.
 mkdir .svn/tmp
 
+# Do does steps manually for now seems more reasonable.
 # Set assets correct mime type.
-svn propset svn:mime-type image/png assets/*.png
-
-svn add trunk/*
-svn add assets/*
-
-svn commit -m ${latestTag} --username algolia
+# svn propset svn:mime-type image/png assets/*.png
+#
+# svn add trunk/* --force
+# svn add assets/* --force
+#
+# svn commit -m ${latestTag} --username algolia
